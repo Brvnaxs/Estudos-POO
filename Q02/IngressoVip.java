@@ -1,20 +1,21 @@
 package Q02;
 
 public class IngressoVip extends Ingresso{
-    float valorAdicional;
-    public IngressoVip(float valor, float valorAdicional) {
+    double valorAdicional = 0.05f;
+
+    public IngressoVip(double valor) {
         super(valor);
-        this.valorAdicional = valorAdicional;
-    }
-    public float ImprimeValorTotal(){
-        return this.valor+this.valorAdicional;
+        this.valorAdicional = this.valorAdicional;
     }
 
-    public float getValorAdicional() {
+    public double getValorAdicional() {
         return valorAdicional;
     }
 
-    public void setValorAdicional(float valorAdicional) {
-        this.valorAdicional = valorAdicional;
+    public void setValorAdicional() {
+        this.valorAdicional = this.valorAdicional;
+    }
+    public double calcValorAdicional(){
+        return this.valor*this.valorAdicional;
     }
 }

@@ -1,20 +1,20 @@
 package Q02;
 
 public class Ingresso {
-    float valor;
+    double valor;
 
-    public Ingresso(float valor) {
+    public Ingresso(double valor) {
         this.valor = valor;
     }
-    public float ImprimirValor(){
+    public double ImprimirValor(){
         return this.valor;
     }
 
-    public float getValor() {
+    public double getValor() {
         return valor;
     }
 
-    public void setValor(float valor) {
+    public void setValor(double valor) {
         this.valor = valor;
     }
 }//Usar extends pras classes herdeiras
